@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose')
 
 const helloSchema = new mongoose.Schema({
   message: {
@@ -10,8 +10,8 @@ const helloSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
-});
+})
 
-helloSchema.index({ timestamp: -1 });
+helloSchema.index({ timestamp: -1 })
 
-module.exports = mongoose.model("HelloWorld", helloSchema, "helloworld");
+module.exports = mongoose.model('HelloWorld', helloSchema, 'helloworld')
